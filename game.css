@@ -1,26 +1,32 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body,html{
+body,
+html {
     margin: 0%;
     padding: 0%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0%;
     padding: 0%;
 }
 
-img{
+img {
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
 }
 
-.game-title h1{
+.game-title h1 {
     background-color: #081b31;
     color: #fff;
     height: 100px;
@@ -29,7 +35,7 @@ img{
     margin-bottom: 50px;
 }
 
-.choice img{
+.choice img {
     width: 100%;
     max-width: 200px;
     height: 200px;
@@ -37,21 +43,21 @@ img{
     object-fit: cover;
 }
 
-.choices{
+.choices {
     gap: 30px;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.choice img:hover{
+.choice img:hover {
     opacity: 0.5;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 10px 30px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
 .score-board,
-.msg-container{
+.msg-container {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -59,7 +65,7 @@ img{
     font-weight: 700;
 }
 
-.score-board{
+.score-board {
     justify-content: space-around;
     width: 100%;
     max-width: 50%;
@@ -68,11 +74,12 @@ img{
     margin-bottom: 50px;
 }
 
-#user-score,#computer-score{
+#user-score,
+#computer-score {
     font-size: 30px;
 }
 
-#msg{
+#msg {
     background-color: #081b31;
     color: #fff;
     padding: 20px 30px;
@@ -86,3 +93,25 @@ img{
     border: 2px solid #081b31;
 } */
 
+@media screen and (max-width: 480px) {
+    .score-board {
+        max-width: 100%;
+    }
+
+    .choice img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .choices {
+        flex-direction: row;
+    }
+
+    .choice {
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+    .choice img{
+        border-radius: 100%;
+    }
+}
