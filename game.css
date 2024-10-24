@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+.game-title h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.choice img{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.choices{
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.choice img:hover{
+    opacity: 0.5;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9), 0 10px 30px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.score-board,
+.msg-container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.score-board{
+    justify-content: space-around;
+    width: 100%;
+    max-width: 50%;
+    margin: 0% auto;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#user-score,#computer-score{
+    font-size: 30px;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* #msg:hover{
+    background-color: transparent;
+    color: #081b31;
+    border: 2px solid #081b31;
+} */
+

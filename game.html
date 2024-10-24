@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div class="main-section-wrapper">
+        <div class="game-section-wrapper">
+            <div class="container">
+                <div class="game-main-section">
+                    <div class="game-title">
+                        <h1>Rock-paper-scissor</h1>
+                    </div>
+                    <div class="choices">
+                        <div class="choice" id="rock">
+                            <div class="choice-img">
+                                <img src="./img/rock.png" alt="rock">
+                            </div>
+                        </div>
+                        <div class="choice" id="paper">
+                            <div class="choice-img">
+                                <img src="./img/paper.png" alt="rock">
+                            </div>
+                        </div>
+                        <div class="choice" id="scissors">
+                            <div class="choice-img">
+                                <img src="./img/scissors.png" alt="rock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score-board">
+                       <div class="left-score">
+                        <div class="score">
+                            <p id="user-score">0</p>
+                            <p>You</p>
+                        </div>
+                       </div>
+                        <div class="right-score">
+                            <div class="score">
+                                <p id="computer-score">0</p>
+                                <p id="comp">Computer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg-container">
+                        <p id="msg">
+                            Play your move
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
